@@ -8,21 +8,29 @@
       .font-sans { font-family: 'Inter', -apple-system, sans-serif; }
 
       .glass-card {
-        fill: rgba(20, 20, 20, 0.6);
+        fill: rgba(18, 18, 18, 0.65);
         stroke: rgba(255, 180, 70, 0.25);
         stroke-width: 1.2px;
         backdrop-filter: blur(20px);
-        filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.5));
+        filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.55));
       }
 
       .ring-progress {
-        stroke-dasharray: 250;
+        stroke-dasharray: 260;
         stroke-dashoffset: 40;
-        animation: ringFill 2.5s ease-out forwards;
+        animation: ringFill 2.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
       }
       @keyframes ringFill {
-        from { stroke-dashoffset: 250; }
+        from { stroke-dashoffset: 260; }
         to { stroke-dashoffset: 40; }
+      }
+
+      .stat-row {
+        animation: slideIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      @keyframes slideIn {
+        from { opacity: 0; transform: translateX(-15px); }
+        to { opacity: 1; transform: translateX(0); }
       }
     </style>
 
@@ -42,41 +50,38 @@
     <text x="24" y="30" fill="#94A3B8" font-size="10" class="font-mono">@UmarAnsari100</text>
   </g>
 
-  <!-- Left Stats Column -->
+  <!-- Animated Stat Rows -->
   <g transform="translate(24, 85)" font-size="12" class="font-sans">
     <!-- Total Stars -->
-    <g transform="translate(0, 0)">
+    <g transform="translate(0, 0)" class="stat-row" style="animation-delay: 0.1s;">
       <circle cx="8" cy="8" r="4" fill="#FFB347"/>
       <text x="20" y="12" fill="#E2E8F0" font-weight="500">Stars Earned</text>
-      <text x="220" y="12" fill="#F7C873" font-weight="700" class="font-mono" text-anchor="end">--</text>
+      <text x="220" y="12" fill="#F7C873" font-weight="700" class="font-mono" text-anchor="end">180+</text>
     </g>
     <!-- Total Commits -->
-    <g transform="translate(0, 28)">
+    <g transform="translate(0, 28)" class="stat-row" style="animation-delay: 0.25s;">
       <circle cx="8" cy="8" r="4" fill="#F7C873"/>
       <text x="20" y="12" fill="#E2E8F0" font-weight="500">Total Commits</text>
-      <text x="220" y="12" fill="#F7C873" font-weight="700" class="font-mono" text-anchor="end">Active</text>
+      <text x="220" y="12" fill="#F7C873" font-weight="700" class="font-mono" text-anchor="end">1.2K+</text>
     </g>
     <!-- Pull Requests -->
-    <g transform="translate(0, 56)">
+    <g transform="translate(0, 56)" class="stat-row" style="animation-delay: 0.4s;">
       <circle cx="8" cy="8" r="4" fill="#FF9A3C"/>
       <text x="20" y="12" fill="#E2E8F0" font-weight="500">Pull Requests</text>
-      <text x="220" y="12" fill="#F7C873" font-weight="700" class="font-mono" text-anchor="end">Merged</text>
+      <text x="220" y="12" fill="#F7C873" font-weight="700" class="font-mono" text-anchor="end">45+</text>
     </g>
     <!-- Contributed Repos -->
-    <g transform="translate(0, 84)">
+    <g transform="translate(0, 84)" class="stat-row" style="animation-delay: 0.55s;">
       <circle cx="8" cy="8" r="4" fill="#D97706"/>
       <text x="20" y="12" fill="#E2E8F0" font-weight="500">Total Repositories</text>
-      <text x="220" y="12" fill="#F7C873" font-weight="700" class="font-mono" text-anchor="end">Live</text>
+      <text x="220" y="12" fill="#F7C873" font-weight="700" class="font-mono" text-anchor="end">20+</text>
     </g>
   </g>
 
   <!-- Right Side Rating Circle Ring -->
   <g transform="translate(360, 120)">
-    <!-- Outer Track Circle -->
     <circle cx="0" cy="0" r="45" fill="none" stroke="rgba(255, 180, 70, 0.15)" stroke-width="8"/>
-    <!-- Animated Progress Ring -->
     <circle cx="0" cy="0" r="45" fill="none" stroke="url(#amberGrad)" stroke-width="8" stroke-linecap="round" class="ring-progress" transform="rotate(-90)"/>
-    <!-- Rating Text -->
     <text x="0" y="6" text-anchor="middle" fill="#FFFFFF" font-size="22" font-weight="700" class="font-heading">A+</text>
     <text x="0" y="24" text-anchor="middle" fill="#F7C873" font-size="9" font-weight="600" class="font-mono">RANK</text>
   </g>

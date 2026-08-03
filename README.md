@@ -1,32 +1,49 @@
 <div align="center">
 
-  <!-- HERO BANNER (AUTO DARK/LIGHT THEME SWITCH) -->
+  <!-- AUTO DARK / LIGHT MODE BANNER SWITCHING WITH CACHE BUSTING -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./banner.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./banner-light.svg">
-    <img src="./banner.svg" alt="Muhammad Umar Ansari - Full Stack Web Developer Banner" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="./banner.svg?v=1">
+    <source media="(prefers-color-scheme: light)" srcset="./banner-light.svg?v=1">
+    <img src="./banner.svg?v=1" alt="Muhammad Umar Ansari - Full Stack Web Developer Banner" width="100%">
   </picture>
 
   <br><br>
 
-  <!-- INTRODUCTION -->
-  <h1>Hi 👋 I'm Muhammad Umar Ansari</h1>
+  <!-- INTERACTIVE SWINGING 3D LANYARD ID BADGE -->
+  <a href="https://umar-two.vercel.app">
+    <img src="./lanyard.svg?v=1" alt="Muhammad Umar Ansari Interactive Lanyard Badge" width="380">
+  </a>
 
+  <br><br>
+
+  <!-- PROFILE VIEWS COUNTER -->
   <p align="center">
-    <b>Full Stack Web Developer</b> based in Rawalpindi, Pakistan.<br>
-    Crafting digital experiences that are not only functional, but memorable.
+    <img src="https://komarev.com/ghpvc/?username=UmarAnsari100&color=d97706&style=flat-square" alt="Profile Views Counter">
   </p>
 
   <br>
 
-  <!-- QUICK NAV BUTTONS -->
+  <h1>Hi 👋 I'm Muhammad Umar Ansari</h1>
+
   <p align="center">
-    <a href="https://umar-two.vercel.app" target="_blank">
-      <img src="https://img.shields.io/badge/🌐_Live_Portfolio-umar--two.vercel.app-151515?style=for-the-badge&logoColor=white" alt="Live Portfolio">
+    <b>Full-Stack Web Developer</b> based in Rawalpindi, Pakistan.<br>
+    Building digital experiences that are not just functional, but memorable.
+  </p>
+
+  <br>
+
+  <!-- CONNECT BUTTONS -->
+  <p align="center">
+    <a href="https://umar-two.vercel.app">
+      <img src="https://img.shields.io/badge/🌐_Live_Portfolio-umar--two.vercel.app-151515?style=for-the-badge&logoColor=white" alt="Portfolio">
     </a>
     &nbsp;
     <a href="mailto:mumaransari1607@gmail.com">
       <img src="https://img.shields.io/badge/✉️_Get_in_Touch-mumaransari1607%40gmail.com-D97706?style=for-the-badge&logoColor=white" alt="Email">
+    </a>
+    &nbsp;
+    <a href="https://github.com/UmarAnsari100">
+      <img src="https://img.shields.io/badge/🐙_GitHub-UmarAnsari100-2B2B2B?style=for-the-badge&logoColor=white" alt="GitHub">
     </a>
   </p>
 
@@ -50,17 +67,17 @@ I focus on building web software that feels fast, intuitive, and thoughtfully cr
 
 ---
 
-### ✦ FEATURED PROJECTS
+### ✦ CURRENTLY WORKING ON
 
 <table width="100%" stroke="none">
   <tr>
     <td width="50%" valign="top">
       <h3>🌐 Developer Portfolio</h3>
-      <p>My personal digital portfolio showcasing motion design, glassmorphism UI, and interactive projects.</p>
+      <p>Personal luxury developer portfolio showcasing motion design, glassmorphism UI, and interactive projects.</p>
       <p><b>Tech:</b> <code>React.js</code> <code>Tailwind CSS</code> <code>Vite</code></p>
       <p><b>Status:</b> 🟢 Live</p>
       <p>
-        <a href="https://umar-two.vercel.app"><b>Explore Live Demo ↗</b></a> &nbsp;•&nbsp;
+        <a href="https://umar-two.vercel.app"><b>Live Demo ↗</b></a> &nbsp;•&nbsp;
         <a href="https://github.com/UmarAnsari100"><b>GitHub Repo</b></a>
       </p>
     </td>
@@ -158,21 +175,21 @@ I focus on building web software that feels fast, intuitive, and thoughtfully cr
   <table border="0">
     <tr>
       <td width="50%" align="center">
-        <img src="./stats.svg" alt="GitHub Stats Overview" width="100%">
+        <img src="./stats.svg?v=1" alt="GitHub Stats Overview" width="100%">
       </td>
       <td width="50%" align="center">
-        <img src="./langs.svg" alt="Top Languages Overview" width="100%">
+        <img src="./langs.svg?v=1" alt="Top Languages Overview" width="100%">
       </td>
     </tr>
   </table>
 
   <br>
 
-  <img src="./trophies.svg" alt="GitHub Trophies" width="100%">
+  <img src="./trophies.svg?v=1" alt="GitHub Trophies" width="100%">
 
   <br><br>
 
-  <h3>🐍 Contribution Snake Activity</h3>
+  <h3>🐍 Contribution Activity Graph</h3>
   <img src="https://raw.githubusercontent.com/UmarAnsari100/UmarAnsari100/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake" width="100%">
 </div>
 
@@ -192,7 +209,7 @@ I focus on building web software that feels fast, intuitive, and thoughtfully cr
 
 ---
 
-### ✦ CONNECT & CONTACT
+### ✦ CONNECT WITH ME
 
 <div align="center">
   <p>
