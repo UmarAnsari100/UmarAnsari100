@@ -1,38 +1,38 @@
 <div align="center">
 
-  <!-- AUTO DARK / LIGHT MODE BANNER SWITCHING WITH CACHE BUSTING -->
+  <!-- HERO BANNER (AUTO DARK/LIGHT THEME SWITCHING) -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./banner.svg?v=1">
-    <source media="(prefers-color-scheme: light)" srcset="./banner-light.svg?v=1">
-    <img src="./banner.svg?v=1" alt="Muhammad Umar Ansari - Full Stack Web Developer Banner" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="./banner.svg?v=2">
+    <source media="(prefers-color-scheme: light)" srcset="./banner-light.svg?v=2">
+    <img src="./banner.svg?v=2" alt="Muhammad Umar Ansari Banner" width="100%">
   </picture>
 
   <br><br>
 
-  <!-- INTERACTIVE SWINGING 3D LANYARD ID BADGE -->
+  <!-- INTERACTIVE SWINGING 3D LANYARD BADGE -->
   <a href="https://umar-two.vercel.app">
-    <img src="./lanyard.svg?v=1" alt="Muhammad Umar Ansari Interactive Lanyard Badge" width="380">
+    <img src="./lanyard.svg?v=2" alt="Muhammad Umar Ansari Lanyard Passport Badge" width="380">
   </a>
 
   <br><br>
 
   <!-- PROFILE VIEWS COUNTER -->
   <p align="center">
-    <img src="https://komarev.com/ghpvc/?username=UmarAnsari100&color=d97706&style=flat-square" alt="Profile Views Counter">
+    <img src="https://komarev.com/ghpvc/?username=UmarAnsari100&color=d97706&style=flat-square" alt="Profile Views">
   </p>
 
   <br>
 
-  <h1>Hi 👋 I'm Muhammad Umar Ansari</h1>
+  <h1>Muhammad Umar Ansari</h1>
 
   <p align="center">
-    <b>Full-Stack Web Developer</b> based in Rawalpindi, Pakistan.<br>
-    Building digital experiences that are not just functional, but memorable.
+    <b>Full Stack Web Developer</b> • Rawalpindi, Pakistan<br>
+    <i>Building digital experiences that are not only functional, but memorable.</i>
   </p>
 
   <br>
 
-  <!-- CONNECT BUTTONS -->
+  <!-- LUXURY ROUNDED GLASS BUTTONS -->
   <p align="center">
     <a href="https://umar-two.vercel.app">
       <img src="https://img.shields.io/badge/🌐_Live_Portfolio-umar--two.vercel.app-151515?style=for-the-badge&logoColor=white" alt="Portfolio">
@@ -49,11 +49,9 @@
 
 </div>
 
-<br><br>
+<br><br><br>
 
----
-
-### ✦ ABOUT ME
+### ABOUT
 
 I focus on building web software that feels fast, intuitive, and thoughtfully crafted. With a background in Computer Science and a passion for motion UI and minimalist systems, I enjoy turning complex backend requirements into clean, high-performance web products.
 
@@ -63,141 +61,124 @@ I focus on building web software that feels fast, intuitive, and thoughtfully cr
 • Architecture: Component-driven frontends paired with REST APIs and clean database schemas.
 ```
 
-<br>
+<br><br><br>
 
----
+### FEATURED PROJECTS
 
-### ✦ CURRENTLY WORKING ON
-
-<table width="100%" stroke="none">
+<table width="100%" border="0" cellspacing="0" cellpadding="16">
   <tr>
-    <td width="50%" valign="top">
-      <h3>🌐 Developer Portfolio</h3>
+    <td valign="top">
+      <h2>🌐 Developer Portfolio</h2>
       <p>Personal luxury developer portfolio showcasing motion design, glassmorphism UI, and interactive projects.</p>
-      <p><b>Tech:</b> <code>React.js</code> <code>Tailwind CSS</code> <code>Vite</code></p>
-      <p><b>Status:</b> 🟢 Live</p>
+      <p><b>Tech Stack:</b> <code>React.js</code> &nbsp; <code>Tailwind CSS</code> &nbsp; <code>Vite</code></p>
       <p>
-        <a href="https://umar-two.vercel.app"><b>Live Demo ↗</b></a> &nbsp;•&nbsp;
-        <a href="https://github.com/UmarAnsari100"><b>GitHub Repo</b></a>
+        <a href="https://umar-two.vercel.app"><b>Live Demo ↗</b></a> &nbsp;•&nbsp; 
+        <a href="https://github.com/UmarAnsari100"><b>GitHub Repository</b></a>
       </p>
     </td>
-    <td width="50%" valign="top">
-      <h3>🎓 StudyBuddy AI</h3>
+  </tr>
+</table>
+
+<br><br>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="16">
+  <tr>
+    <td valign="top">
+      <h2>🎓 StudyBuddy AI</h2>
       <p>AI-driven study companion that generates structured flashcards, study schedules, and interactive study rooms.</p>
-      <p><b>Tech:</b> <code>Next.js</code> <code>TypeScript</code> <code>Firebase</code> <code>Tailwind</code></p>
-      <p><b>Status:</b> 🚀 Production Ready</p>
+      <p><b>Tech Stack:</b> <code>Next.js</code> &nbsp; <code>TypeScript</code> &nbsp; <code>Firebase</code> &nbsp; <code>Tailwind CSS</code></p>
       <p>
-        <a href="https://github.com/UmarAnsari100"><b>View Project ↗</b></a>
+        <a href="https://github.com/UmarAnsari100"><b>View Repository ↗</b></a>
       </p>
     </td>
   </tr>
+</table>
+
+<br><br>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="16">
   <tr>
-    <td width="50%" valign="top">
-      <h3>🚛 MUSA Transport</h3>
+    <td valign="top">
+      <h2>🚛 MUSA Transport</h2>
       <p>Full-stack fleet management and logistics platform featuring real-time booking and vehicle dispatch tracking.</p>
-      <p><b>Tech:</b> <code>PHP</code> <code>MySQL</code> <code>JavaScript</code> <code>Bootstrap</code></p>
-      <p><b>Status:</b> 📦 Deployed</p>
+      <p><b>Tech Stack:</b> <code>PHP</code> &nbsp; <code>MySQL</code> &nbsp; <code>JavaScript</code> &nbsp; <code>Bootstrap</code></p>
       <p>
-        <a href="https://github.com/UmarAnsari100"><b>View Project ↗</b></a>
+        <a href="https://github.com/UmarAnsari100"><b>View Repository ↗</b></a>
       </p>
     </td>
-    <td width="50%" valign="top">
-      <h3>🚘 Royal VIP Limos</h3>
+  </tr>
+</table>
+
+<br><br>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="16">
+  <tr>
+    <td valign="top">
+      <h2>🚘 Royal VIP Limos</h2>
       <p>Luxury chauffeur reservation platform built for high-end vehicle rentals with instant booking calculation.</p>
-      <p><b>Tech:</b> <code>React.js</code> <code>Tailwind CSS</code> <code>REST APIs</code></p>
-      <p><b>Status:</b> 🟢 Live</p>
+      <p><b>Tech Stack:</b> <code>React.js</code> &nbsp; <code>Tailwind CSS</code> &nbsp; <code>REST APIs</code></p>
       <p>
-        <a href="https://github.com/UmarAnsari100"><b>View Project ↗</b></a>
+        <a href="https://github.com/UmarAnsari100"><b>View Repository ↗</b></a>
       </p>
     </td>
   </tr>
+</table>
+
+<br><br>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="16">
   <tr>
-    <td colspan="2" valign="top">
-      <h3>🛍️ Option One Store</h3>
+    <td valign="top">
+      <h2>🛍️ Option One Store</h2>
       <p>High-performance e-commerce platform with reactive product searching, cart persistence, and customer portal.</p>
-      <p><b>Tech:</b> <code>React.js</code> <code>JavaScript</code> <code>Tailwind CSS</code> <code>REST APIs</code></p>
-      <p><b>Status:</b> 🟢 Active Development</p>
+      <p><b>Tech Stack:</b> <code>React.js</code> &nbsp; <code>JavaScript</code> &nbsp; <code>Tailwind CSS</code> &nbsp; <code>REST APIs</code></p>
       <p>
-        <a href="https://github.com/UmarAnsari100"><b>View Project ↗</b></a>
+        <a href="https://github.com/UmarAnsari100"><b>View Repository ↗</b></a>
       </p>
     </td>
   </tr>
 </table>
 
-<br>
+<br><br><br>
 
----
+### TECHNICAL ECOSYSTEM
 
-### ✦ TECHNICAL STACK
+```
+Frontend    ⚛ React.js  ▲ Next.js  📘 TypeScript  ⚡ JavaScript (ES6+)  🎨 Tailwind CSS
+Backend     🐘 PHP  🔌 REST APIs  🟢 Node.js
+Database    🗄 MySQL  🔥 Firebase Firestore
+Tools       🐙 Git & GitHub  ▲ Vercel  🎨 Figma  ⚡ VS Code
+```
 
-<table width="100%">
-  <tr>
-    <td width="20%" valign="top"><b>Frontend</b></td>
-    <td><code>React.js</code> &nbsp; <code>Next.js</code> &nbsp; <code>TypeScript</code> &nbsp; <code>JavaScript (ES6+)</code> &nbsp; <code>HTML5</code></td>
-  </tr>
-  <tr>
-    <td width="20%" valign="top"><b>Styling</b></td>
-    <td><code>Tailwind CSS</code> &nbsp; <code>CSS3 Animations</code> &nbsp; <code>Glassmorphism</code> &nbsp; <code>Responsive Layouts</code></td>
-  </tr>
-  <tr>
-    <td width="20%" valign="top"><b>Backend</b></td>
-    <td><code>PHP</code> &nbsp; <code>REST APIs</code> &nbsp; <code>Node.js</code></td>
-  </tr>
-  <tr>
-    <td width="20%" valign="top"><b>Database</b></td>
-    <td><code>MySQL</code> &nbsp; <code>Firebase Firestore</code> &nbsp; <code>Realtime Database</code></td>
-  </tr>
-  <tr>
-    <td width="20%" valign="top"><b>Tools &amp; Design</b></td>
-    <td><code>Git</code> &nbsp; <code>GitHub</code> &nbsp; <code>Vercel</code> &nbsp; <code>Figma</code> &nbsp; <code>VS Code</code></td>
-  </tr>
-</table>
+<br><br><br>
 
-<br>
-
----
-
-### ✦ DEVELOPMENT PHILOSOPHY
-
-<blockquote>
-  <p align="center">
-    <i>"Great software isn't built by adding more.<br>It's built by removing everything unnecessary until only the essential remains."</i>
-  </p>
-</blockquote>
-
-<br>
-
----
-
-### ✦ GITHUB ANALYTICS & ACHIEVEMENTS
+### ANALYTICS & ACHIEVEMENTS
 
 <div align="center">
-  <table border="0">
+  <table border="0" cellspacing="0" cellpadding="0">
     <tr>
       <td width="50%" align="center">
-        <img src="./stats.svg?v=1" alt="GitHub Stats Overview" width="100%">
+        <img src="./stats.svg?v=2" alt="GitHub Activity Overview" width="100%">
       </td>
       <td width="50%" align="center">
-        <img src="./langs.svg?v=1" alt="Top Languages Overview" width="100%">
+        <img src="./langs.svg?v=2" alt="Top Languages Overview" width="100%">
       </td>
     </tr>
   </table>
 
-  <br>
-
-  <img src="./trophies.svg?v=1" alt="GitHub Trophies" width="100%">
-
   <br><br>
 
-  <h3>🐍 Contribution Activity Graph</h3>
+  <img src="./trophies.svg?v=2" alt="GitHub Achievements" width="100%">
+
+  <br><br><br>
+
+  <h3>🐍 Contribution Graph</h3>
   <img src="https://raw.githubusercontent.com/UmarAnsari100/UmarAnsari100/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake" width="100%">
 </div>
 
-<br><br>
+<br><br><br>
 
----
-
-### ✦ EDUCATION
+### EDUCATION
 
 ```
 🎓 BS Computer Science
@@ -205,11 +186,9 @@ I focus on building web software that feels fast, intuitive, and thoughtfully cr
    2022 — Present (6th Semester)
 ```
 
-<br>
+<br><br><br>
 
----
-
-### ✦ CONNECT WITH ME
+### CONNECT
 
 <div align="center">
   <p>
@@ -220,8 +199,9 @@ I focus on building web software that feels fast, intuitive, and thoughtfully cr
   </p>
 </div>
 
-<br><br>
+<br><br><br>
 
 <div align="center">
-  <p><i>Thank you for visiting. Let's build something meaningful.</i></p>
+  <p><i>"There is elegance in simplicity."</i></p>
+  <p><b>— Muhammad Umar Ansari</b></p>
 </div>
