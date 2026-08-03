@@ -1,176 +1,210 @@
 <div align="center">
 
-  <!-- AUTO DARK / LIGHT MODE BANNER SWITCHING -->
+  <!-- HERO BANNER (AUTO DARK/LIGHT THEME SWITCH) -->
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./banner.svg">
     <source media="(prefers-color-scheme: light)" srcset="./banner-light.svg">
-    <img src="./banner.svg" alt="Muhammad Umar Ansari - Full-Stack Web Developer Banner" width="100%">
+    <img src="./banner.svg" alt="Muhammad Umar Ansari - Full Stack Web Developer Banner" width="100%">
   </picture>
 
   <br><br>
 
-  <!-- INTERACTIVE 3D LANYARD PASSPORT BADGE -->
-  <a href="https://umar-two.vercel.app">
-    <img src="./lanyard.svg" alt="Umar Ansari Interactive Lanyard Badge" width="380">
-  </a>
+  <!-- INTRODUCTION -->
+  <h1>Hi 👋 I'm Muhammad Umar Ansari</h1>
 
-  <br><br>
-
-  <h1>✦ FULL-STACK WEB DEVELOPER & UI/UX ARCHITECT ✦</h1>
-
-  <p>
-    <b>Building digital experiences that are not just functional, but memorable.</b>
+  <p align="center">
+    <b>Full Stack Web Developer</b> based in Rawalpindi, Pakistan.<br>
+    Crafting digital experiences that are not only functional, but memorable.
   </p>
 
-  <p>
-    <a href="https://umar-two.vercel.app">🌐 <b>Live Portfolio</b></a> &nbsp;•&nbsp;
-    <a href="mailto:mumaransari1607@gmail.com">✉️ <b>Get in Touch</b></a> &nbsp;•&nbsp;
-    <a href="https://github.com/UmarAnsari100">🐙 <b>GitHub Profile</b></a>
+  <br>
+
+  <!-- QUICK NAV BUTTONS -->
+  <p align="center">
+    <a href="https://umar-two.vercel.app" target="_blank">
+      <img src="https://img.shields.io/badge/🌐_Live_Portfolio-umar--two.vercel.app-151515?style=for-the-badge&logoColor=white" alt="Live Portfolio">
+    </a>
+    &nbsp;
+    <a href="mailto:mumaransari1607@gmail.com">
+      <img src="https://img.shields.io/badge/✉️_Get_in_Touch-mumaransari1607%40gmail.com-D97706?style=for-the-badge&logoColor=white" alt="Email">
+    </a>
   </p>
 
 </div>
 
+<br><br>
+
 ---
 
-### 👨‍💻 About Me
+### ✦ ABOUT ME
 
-```yaml
-Name: Muhammad Umar Ansari
-Role: Full-Stack Web Developer
-Education: BS Computer Science, HITEC University Taxila
-Location: Rawalpindi, Pakistan
-Passions: Web Architecture, Motion UI, High-Performance Systems, Luxury Interfaces
-Current Focus: Building scalable Next.js & React applications with clean backend architectures
+I focus on building web software that feels fast, intuitive, and thoughtfully crafted. With a background in Computer Science and a passion for motion UI and minimalist systems, I enjoy turning complex backend requirements into clean, high-performance web products.
+
+```
+• Design & Engineering: Bridging high-fidelity UI layout with scalable web backends.
+• Performance & Speed: Lightweight bundles, optimized queries, and fluid transitions.
+• Architecture: Component-driven frontends paired with REST APIs and clean database schemas.
 ```
 
-Computer Science student with a deep passion for designing and engineering modern, high-performance web applications. I bridge the gap between aesthetic design systems and robust backend engineering—crafting software that feels fluid, fast, and effortless to use.
+<br>
 
 ---
 
-### 🚀 Featured Projects
+### ✦ FEATURED PROJECTS
 
-<table width="100%">
+<table width="100%" stroke="none">
   <tr>
     <td width="50%" valign="top">
-      <h3 align="left">🌐 Developer Portfolio</h3>
-      <p><b>Personal luxury developer portfolio built with React and modern CSS animations.</b></p>
-      <p>• Warm glassmorphism aesthetics & micro-interactions</p>
-      <p>• Responsive design optimized for fast load speeds</p>
-      <p><code>React.js</code> <code>Tailwind CSS</code> <code>Vite</code></p>
-      <p><a href="https://umar-two.vercel.app">🔗 Live Demo</a></p>
+      <h3>🌐 Developer Portfolio</h3>
+      <p>My personal digital portfolio showcasing motion design, glassmorphism UI, and interactive projects.</p>
+      <p><b>Tech:</b> <code>React.js</code> <code>Tailwind CSS</code> <code>Vite</code></p>
+      <p><b>Status:</b> 🟢 Live</p>
+      <p>
+        <a href="https://umar-two.vercel.app"><b>Explore Live Demo ↗</b></a> &nbsp;•&nbsp;
+        <a href="https://github.com/UmarAnsari100"><b>GitHub Repo</b></a>
+      </p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="left">🎓 StudyBuddy AI</h3>
-      <p><b>AI-powered learning platform helping students organize & generate study materials.</b></p>
-      <p>• Intelligent study plan generation & flashcards</p>
-      <p>• Interactive study room & progress tracking</p>
-      <p><code>Next.js</code> <code>TypeScript</code> <code>Tailwind CSS</code> <code>Firebase</code></p>
-      <p><a href="https://github.com/UmarAnsari100">🔗 View Project</a></p>
+      <h3>🎓 StudyBuddy AI</h3>
+      <p>AI-driven study companion that generates structured flashcards, study schedules, and interactive study rooms.</p>
+      <p><b>Tech:</b> <code>Next.js</code> <code>TypeScript</code> <code>Firebase</code> <code>Tailwind</code></p>
+      <p><b>Status:</b> 🚀 Production Ready</p>
+      <p>
+        <a href="https://github.com/UmarAnsari100"><b>View Project ↗</b></a>
+      </p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3 align="left">🚛 MUSA Transport</h3>
-      <p><b>Enterprise logistics & fleet management booking platform.</b></p>
-      <p>• Live route calculation & dispatch management</p>
-      <p>• Admin dashboard for real-time fleet analytics</p>
-      <p><code>PHP</code> <code>MySQL</code> <code>JavaScript</code> <code>Bootstrap</code></p>
-      <p><a href="https://github.com/UmarAnsari100">🔗 View Project</a></p>
+      <h3>🚛 MUSA Transport</h3>
+      <p>Full-stack fleet management and logistics platform featuring real-time booking and vehicle dispatch tracking.</p>
+      <p><b>Tech:</b> <code>PHP</code> <code>MySQL</code> <code>JavaScript</code> <code>Bootstrap</code></p>
+      <p><b>Status:</b> 📦 Deployed</p>
+      <p>
+        <a href="https://github.com/UmarAnsari100"><b>View Project ↗</b></a>
+      </p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="left">🚘 Royal VIP Limos</h3>
-      <p><b>High-end luxury chauffeur and limousine reservation platform.</b></p>
-      <p>• Premium vehicle catalog with instant booking flow</p>
-      <p>• Elegant dark glass theme tailored for luxury clientele</p>
-      <p><code>React.js</code> <code>Tailwind CSS</code> <code>REST APIs</code></p>
-      <p><a href="https://github.com/UmarAnsari100">🔗 View Project</a></p>
+      <h3>🚘 Royal VIP Limos</h3>
+      <p>Luxury chauffeur reservation platform built for high-end vehicle rentals with instant booking calculation.</p>
+      <p><b>Tech:</b> <code>React.js</code> <code>Tailwind CSS</code> <code>REST APIs</code></p>
+      <p><b>Status:</b> 🟢 Live</p>
+      <p>
+        <a href="https://github.com/UmarAnsari100"><b>View Project ↗</b></a>
+      </p>
     </td>
   </tr>
   <tr>
     <td colspan="2" valign="top">
-      <h3 align="left">🛍️ Option One Store</h3>
-      <p><b>Full-featured e-commerce platform with reactive shopping cart & checkout flow.</b></p>
-      <p>• Product filtering, search indexing, and customer portal</p>
-      <p>• Optimized state management & responsive UI layout</p>
-      <p><code>React.js</code> <code>JavaScript</code> <code>Tailwind CSS</code> <code>REST APIs</code></p>
-      <p><a href="https://github.com/UmarAnsari100">🔗 View Project</a></p>
+      <h3>🛍️ Option One Store</h3>
+      <p>High-performance e-commerce platform with reactive product searching, cart persistence, and customer portal.</p>
+      <p><b>Tech:</b> <code>React.js</code> <code>JavaScript</code> <code>Tailwind CSS</code> <code>REST APIs</code></p>
+      <p><b>Status:</b> 🟢 Active Development</p>
+      <p>
+        <a href="https://github.com/UmarAnsari100"><b>View Project ↗</b></a>
+      </p>
     </td>
   </tr>
 </table>
 
----
-
-### 🛠️ Technical Ecosystem
-
-```
-┌───────────────────┬────────────────────────────────────────────────────────┐
-│ Domain            │ Technologies & Tools                                  │
-├───────────────────┼────────────────────────────────────────────────────────┤
-│ Frontend          │ React.js • Next.js • TypeScript • JavaScript (ES6+)    │
-│ Styling & UI      │ Tailwind CSS • CSS3 Animations • HTML5 • Figma        │
-│ Backend & Database│ PHP • MySQL • Firebase • REST APIs                     │
-│ Version & Deploy  │ Git • GitHub • Vercel • CI/CD Workflows               │
-└───────────────────┴────────────────────────────────────────────────────────┘
-```
+<br>
 
 ---
 
-### 📊 Performance & GitHub Analytics
+### ✦ TECHNICAL STACK
+
+<table width="100%">
+  <tr>
+    <td width="20%" valign="top"><b>Frontend</b></td>
+    <td><code>React.js</code> &nbsp; <code>Next.js</code> &nbsp; <code>TypeScript</code> &nbsp; <code>JavaScript (ES6+)</code> &nbsp; <code>HTML5</code></td>
+  </tr>
+  <tr>
+    <td width="20%" valign="top"><b>Styling</b></td>
+    <td><code>Tailwind CSS</code> &nbsp; <code>CSS3 Animations</code> &nbsp; <code>Glassmorphism</code> &nbsp; <code>Responsive Layouts</code></td>
+  </tr>
+  <tr>
+    <td width="20%" valign="top"><b>Backend</b></td>
+    <td><code>PHP</code> &nbsp; <code>REST APIs</code> &nbsp; <code>Node.js</code></td>
+  </tr>
+  <tr>
+    <td width="20%" valign="top"><b>Database</b></td>
+    <td><code>MySQL</code> &nbsp; <code>Firebase Firestore</code> &nbsp; <code>Realtime Database</code></td>
+  </tr>
+  <tr>
+    <td width="20%" valign="top"><b>Tools &amp; Design</b></td>
+    <td><code>Git</code> &nbsp; <code>GitHub</code> &nbsp; <code>Vercel</code> &nbsp; <code>Figma</code> &nbsp; <code>VS Code</code></td>
+  </tr>
+</table>
+
+<br>
+
+---
+
+### ✦ DEVELOPMENT PHILOSOPHY
+
+<blockquote>
+  <p align="center">
+    <i>"Great software isn't built by adding more.<br>It's built by removing everything unnecessary until only the essential remains."</i>
+  </p>
+</blockquote>
+
+<br>
+
+---
+
+### ✦ GITHUB ANALYTICS & ACHIEVEMENTS
 
 <div align="center">
   <table border="0">
     <tr>
-      <td width="50%">
-        <img src="./stats.svg" alt="Umar Ansari GitHub Stats" width="100%">
+      <td width="50%" align="center">
+        <img src="./stats.svg" alt="GitHub Stats Overview" width="100%">
       </td>
-      <td width="50%">
-        <img src="./langs.svg" alt="Umar Ansari Top Languages" width="100%">
+      <td width="50%" align="center">
+        <img src="./langs.svg" alt="Top Languages Overview" width="100%">
       </td>
     </tr>
   </table>
 
   <br>
 
-  <img src="./trophies.svg" alt="Umar Ansari GitHub Trophies" width="100%">
-</div>
-
----
-
-### 🐍 Contribution Activity
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/UmarAnsari100/UmarAnsari100/output/github-contribution-grid-snake-dark.svg" alt="Umar Ansari GitHub Contribution Snake" width="100%">
-</div>
-
----
-
-### 🎓 Education & Background
-
-| Degree | Institution | Location | Duration / Status |
-| :--- | :--- | :--- | :--- |
-| **BS Computer Science** | **HITEC University** | Taxila, Pakistan | 2023 — Present *(6th Semester)* |
-
----
-
-### 📬 Connect With Me
-
-<div align="center">
-  
-  <a href="https://umar-two.vercel.app">
-    <img src="https://img.shields.io/badge/Portfolio-umar--two.vercel.app-D97706?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio">
-  </a>
-  &nbsp;
-  <a href="mailto:mumaransari1607@gmail.com">
-    <img src="https://img.shields.io/badge/Email-mumaransari1607%40gmail.com-FF9A3C?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
-  </a>
-  &nbsp;
-  <a href="https://github.com/UmarAnsari100">
-    <img src="https://img.shields.io/badge/GitHub-UmarAnsari100-2B2B2B?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-  </a>
+  <img src="./trophies.svg" alt="GitHub Trophies" width="100%">
 
   <br><br>
 
-  <p><i>"Every line of code is a step towards a better tomorrow."</i></p>
+  <h3>🐍 Contribution Snake Activity</h3>
+  <img src="https://raw.githubusercontent.com/UmarAnsari100/UmarAnsari100/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake" width="100%">
+</div>
 
-  <p><b>Thanks for stopping by! 🌟</b></p>
+<br><br>
+
+---
+
+### ✦ EDUCATION
+
+```
+🎓 BS Computer Science
+   HITEC University Taxila, Pakistan
+   2022 — Present (6th Semester)
+```
+
+<br>
+
+---
+
+### ✦ CONNECT & CONTACT
+
+<div align="center">
+  <p>
+    <a href="https://umar-two.vercel.app"><b>🌐 Portfolio</b></a> &nbsp;•&nbsp;
+    <a href="https://github.com/UmarAnsari100"><b>🐙 GitHub</b></a> &nbsp;•&nbsp;
+    <a href="https://linkedin.com"><b>💼 LinkedIn</b></a> &nbsp;•&nbsp;
+    <a href="mailto:mumaransari1607@gmail.com"><b>✉️ Email</b></a>
+  </p>
+</div>
+
+<br><br>
+
+<div align="center">
+  <p><i>Thank you for visiting. Let's build something meaningful.</i></p>
 </div>
