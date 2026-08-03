@@ -1,74 +1,85 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 520" width="100%" height="auto">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 650" width="100%" height="auto">
   <defs>
-    <!-- Fonts Import & Fallback Stack -->
+    <!-- Premium Google Fonts Import -->
     <style type="text/css">
-      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&amp;family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap');
 
       * { margin: 0; padding: 0; box-sizing: border-box; }
-      
-      .font-heading { font-family: 'Space Grotesk', 'Inter', -apple-system, sans-serif; }
+
+      .font-heading { font-family: 'Space Grotesk', -apple-system, sans-serif; }
       .font-mono { font-family: 'IBM Plex Mono', monospace; }
       .font-sans { font-family: 'Inter', -apple-system, sans-serif; }
 
-      /* Glassmorphism Styling */
-      .glass-card {
-        fill: rgba(20, 20, 20, 0.55);
-        stroke: rgba(255, 180, 70, 0.25);
+      /* Apple & Aman Resorts Inspired Ultra-Lux Glassmorphism */
+      .glass-panel {
+        fill: rgba(20, 20, 20, 0.42);
+        stroke: rgba(255, 180, 80, 0.20);
         stroke-width: 1.2px;
-        backdrop-filter: blur(20px);
-        filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
-        transition: all 0.4s ease;
+        backdrop-filter: blur(24px);
+        filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.55));
+        transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
       }
-      .glass-card:hover {
-        stroke: rgba(255, 180, 70, 0.5);
-        fill: rgba(25, 25, 25, 0.65);
+      .glass-panel:hover {
+        fill: rgba(26, 26, 26, 0.52);
+        stroke: rgba(255, 180, 80, 0.40);
+        filter: drop-shadow(0 35px 70px rgba(0, 0, 0, 0.65));
       }
 
-      /* Glow & Bloom Filters */
-      .sun-glow {
+      /* Subtle Sun Pulse Bloom (6s) */
+      .sun-bloom {
         animation: sunPulse 6s ease-in-out infinite alternate;
-        transform-origin: 600px 250px;
+        transform-origin: 800px 300px;
       }
       @keyframes sunPulse {
-        0% { opacity: 0.65; transform: scale(0.98); }
+        0% { opacity: 0.60; transform: scale(0.97); }
         100% { opacity: 0.95; transform: scale(1.05); }
       }
 
-      /* Cloud Motion (40s) */
-      .cloud-move-1 {
-        animation: cloudDrift1 40s linear infinite;
+      /* Cloud Motion (45s) */
+      .cloud-drift-1 {
+        animation: cloudMove1 45s linear infinite;
       }
-      .cloud-move-2 {
-        animation: cloudDrift2 55s linear infinite;
+      .cloud-drift-2 {
+        animation: cloudMove2 65s linear infinite;
       }
-      @keyframes cloudDrift1 {
-        0% { transform: translateX(-100px); }
-        100% { transform: translateX(1300px); }
+      @keyframes cloudMove1 {
+        0% { transform: translateX(-150px); }
+        100% { transform: translateX(1750px); }
       }
-      @keyframes cloudDrift2 {
-        0% { transform: translateX(1200px); }
-        100% { transform: translateX(-200px); }
+      @keyframes cloudMove2 {
+        0% { transform: translateX(1650px); }
+        100% { transform: translateX(-250px); }
       }
 
-      /* Petals Float (14s) */
+      /* Floating Sakura Petals (14s) */
       .petal {
-        animation: petalFall 14s ease-in-out infinite;
+        animation: petalFloat 14s cubic-bezier(0.4, 0, 0.2, 1) infinite;
         transform-origin: center;
       }
       .p1 { animation-delay: 0s; }
-      .p2 { animation-delay: 3s; }
-      .p3 { animation-delay: 6s; }
-      .p4 { animation-delay: 9s; }
-      .p5 { animation-delay: 11s; }
+      .p2 { animation-delay: 3.2s; }
+      .p3 { animation-delay: 6.5s; }
+      .p4 { animation-delay: 9.8s; }
+      .p5 { animation-delay: 12.1s; }
 
-      @keyframes petalFall {
-        0% { transform: translate(0, -20px) rotate(0deg); opacity: 0; }
-        15% { opacity: 0.85; }
-        85% { opacity: 0.85; }
-        100% { transform: translate(-180px, 540px) rotate(420deg); opacity: 0; }
+      @keyframes petalFloat {
+        0% { transform: translate(0, -30px) rotate(0deg); opacity: 0; }
+        15% { opacity: 0.90; }
+        85% { opacity: 0.90; }
+        100% { transform: translate(-220px, 680px) rotate(480deg); opacity: 0; }
       }
 
-      /* Typing Terminal Effect */
+      /* Ambient Light Particles (18s) */
+      .particle-group {
+        animation: particleAmbient 18s ease-in-out infinite alternate;
+      }
+      @keyframes particleAmbient {
+        0% { transform: translate(0, 0); opacity: 0.35; }
+        50% { transform: translate(25px, -35px); opacity: 0.85; }
+        100% { transform: translate(-20px, -70px); opacity: 0.25; }
+      }
+
+      /* Blinking Cursor (700ms) */
       .cursor {
         animation: blink 700ms steps(2, start) infinite;
       }
@@ -77,286 +88,269 @@
         50% { opacity: 0; }
       }
 
-      /* Hologram Scan Line (3.5s) */
-      .scanner-line {
-        animation: scanMove 3.5s ease-in-out infinite alternate;
+      /* Laser Scan Line (3.5s) */
+      .scan-line {
+        animation: laserScan 3.5s ease-in-out infinite alternate;
       }
-      @keyframes scanMove {
-        0% { transform: translateY(20px); opacity: 0.2; }
-        50% { opacity: 0.7; }
-        100% { transform: translateY(480px); opacity: 0.2; }
-      }
-
-      /* Particle Float (20s) */
-      .particle {
-        animation: particleFloat 20s ease-in-out infinite alternate;
-      }
-      @keyframes particleFloat {
-        0% { transform: translate(0, 0); opacity: 0.3; }
-        50% { transform: translate(15px, -25px); opacity: 0.8; }
-        100% { transform: translate(-10px, -50px); opacity: 0.2; }
+      @keyframes laserScan {
+        0% { transform: translateY(20px); opacity: 0.15; }
+        50% { opacity: 0.65; }
+        100% { transform: translateY(610px); opacity: 0.15; }
       }
 
-      /* Shimmer text effect */
-      .shimmer-text {
-        background: linear-gradient(90deg, #FFF4E5 0%, #F7C873 50%, #FFB347 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+      /* Interactive Micro Pill Hover */
+      .pill-item {
+        transition: transform 0.25s ease, fill 0.25s ease, stroke 0.25s ease;
       }
-
-      /* Badge hover effect */
-      .skill-pill {
-        transition: transform 0.2s ease, fill 0.2s ease;
-      }
-      .skill-pill:hover {
+      .pill-item:hover {
         transform: translateY(-2px);
+        fill: rgba(45, 45, 45, 0.75);
+        stroke: rgba(255, 180, 80, 0.55);
       }
     </style>
 
     <!-- Warm Sunset Gradients -->
-    <linearGradient id="bgOverlay" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#151515" stop-opacity="0.2"/>
-      <stop offset="50%" stop-color="#2B1810" stop-opacity="0.1"/>
-      <stop offset="100%" stop-color="#0D0D0D" stop-opacity="0.4"/>
+    <linearGradient id="vignetteGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#120B08" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#24140D" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#0A0604" stop-opacity="0.55"/>
     </linearGradient>
 
-    <radialGradient id="sunGlowGrad" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#FFE4B5" stop-opacity="0.6"/>
-      <stop offset="40%" stop-color="#FF9A3C" stop-opacity="0.35"/>
-      <stop offset="80%" stop-color="#D97706" stop-opacity="0.1"/>
+    <radialGradient id="sunBloomGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF3E0" stop-opacity="0.75"/>
+      <stop offset="35%" stop-color="#FFB347" stop-opacity="0.45"/>
+      <stop offset="70%" stop-color="#D97706" stop-opacity="0.18"/>
       <stop offset="100%" stop-color="#D97706" stop-opacity="0"/>
     </radialGradient>
 
-    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="goldTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#FFB347"/>
       <stop offset="50%" stop-color="#F7C873"/>
       <stop offset="100%" stop-color="#FF9A3C"/>
     </linearGradient>
 
-    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="rgba(255, 180, 70, 0.4)"/>
-      <stop offset="100%" stop-color="rgba(217, 119, 6, 0.1)"/>
+    <linearGradient id="amberBadgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(217, 119, 6, 0.25)"/>
+      <stop offset="100%" stop-color="rgba(255, 179, 71, 0.12)"/>
     </linearGradient>
 
-    <linearGradient id="scannerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="rgba(255, 180, 70, 0)"/>
-      <stop offset="20%" stop-color="rgba(255, 180, 70, 0.4)"/>
-      <stop offset="50%" stop-color="rgba(247, 200, 115, 0.8)"/>
-      <stop offset="80%" stop-color="rgba(255, 180, 70, 0.4)"/>
-      <stop offset="100%" stop-color="rgba(255, 180, 70, 0)"/>
+    <linearGradient id="laserGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255, 180, 80, 0)"/>
+      <stop offset="25%" stop-color="rgba(255, 180, 80, 0.3)"/>
+      <stop offset="50%" stop-color="rgba(247, 200, 115, 0.85)"/>
+      <stop offset="75%" stop-color="rgba(255, 180, 80, 0.3)"/>
+      <stop offset="100%" stop-color="rgba(255, 180, 80, 0)"/>
+    </linearGradient>
+
+    <linearGradient id="goldButtonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFB347"/>
+      <stop offset="100%" stop-color="#D97706"/>
     </linearGradient>
   </defs>
 
-  <!-- Background Base Image (Referenced to avoid huge SVG file size) -->
-  <image href="assets/anime-character.png" x="0" y="0" width="1200" height="520" preserveAspectRatio="xMidYMid slice" />
+  <!-- Full Canvas Background Base Image -->
+  <image href="assets/anime-character.png" x="0" y="0" width="1600" height="650" preserveAspectRatio="xMidYMid slice" />
   
-  <!-- Subtle Vignette & Warm Tint -->
-  <rect width="1200" height="520" fill="url(#bgOverlay)" />
+  <!-- Atmospheric Warm Vignette Overlay -->
+  <rect width="1600" height="650" fill="url(#vignetteGrad)" />
 
-  <!-- Animated Sunset Bloom behind Horizon -->
-  <circle cx="680" cy="240" r="140" fill="url(#sunGlowGrad)" class="sun-glow" />
+  <!-- Animated Sunset Bloom behind Horizon/Character -->
+  <circle cx="800" cy="300" r="180" fill="url(#sunBloomGrad)" class="sun-bloom" />
 
-  <!-- Ambient Moving Sky Particles -->
-  <g class="particle" opacity="0.6">
-    <circle cx="200" cy="150" r="2" fill="#F7C873" />
-    <circle cx="350" cy="80" r="1.5" fill="#FFB347" />
-    <circle cx="500" cy="180" r="2.5" fill="#FFF4E5" />
-    <circle cx="850" cy="120" r="1.8" fill="#F7C873" />
-    <circle cx="1020" cy="220" r="2" fill="#FF9A3C" />
+  <!-- Slow Ambient Clouds silhouetted in sky -->
+  <g opacity="0.12" fill="#FFE4B5">
+    <path class="cloud-drift-1" d="M 0,120 Q 80,80 180,110 Q 280,70 380,110 L 400,160 L 0,160 Z" />
+    <path class="cloud-drift-2" d="M 1200,90 Q 1300,50 1420,85 Q 1520,40 1620,85 L 1650,150 L 1200,150 Z" />
   </g>
 
-  <!-- Animated Floating Sakura Petals -->
+  <!-- Ambient Light Particles Floating (18s) -->
+  <g class="particle-group">
+    <circle cx="280" cy="180" r="2.2" fill="#F7C873" opacity="0.7"/>
+    <circle cx="450" cy="120" r="1.5" fill="#FFB347" opacity="0.6"/>
+    <circle cx="720" cy="220" r="2.8" fill="#FFF9F0" opacity="0.8"/>
+    <circle cx="940" cy="140" r="1.8" fill="#F7C873" opacity="0.7"/>
+    <circle cx="1180" cy="260" r="2.5" fill="#FF9A3C" opacity="0.6"/>
+    <circle cx="1380" cy="160" r="1.6" fill="#FFF9F0" opacity="0.75"/>
+  </g>
+
+  <!-- Animated Floating Sakura Petals (14s) -->
   <g opacity="0.85">
-    <path class="petal p1" d="M 950,20 Q 958,10 964,22 Q 956,34 948,22 Z" fill="#FFB7C5" />
-    <path class="petal p2" d="M 1100,50 Q 1108,40 1114,52 Q 1106,64 1098,52 Z" fill="#FF8095" />
-    <path class="petal p3" d="M 820,10 Q 828,0 834,12 Q 826,24 818,12 Z" fill="#FFB7C5" opacity="0.7"/>
-    <path class="petal p4" d="M 1000,100 Q 1008,90 1014,102 Q 1006,114 998,102 Z" fill="#FF5376" />
-    <path class="petal p5" d="M 750,40 Q 758,30 764,42 Q 756,54 748,42 Z" fill="#FFB7C5" />
+    <path class="petal p1" d="M 1250,30 Q 1258,20 1264,32 Q 1256,44 1248,32 Z" fill="#FFB7C5" />
+    <path class="petal p2" d="M 1450,70 Q 1458,60 1464,72 Q 1456,84 1448,72 Z" fill="#FF8095" />
+    <path class="petal p3" d="M 1080,15 Q 1088,5 1094,17 Q 1086,29 1078,17 Z" fill="#FFB7C5" opacity="0.75"/>
+    <path class="petal p4" d="M 1320,140 Q 1328,130 1334,142 Q 1326,154 1318,142 Z" fill="#FF5376" />
+    <path class="petal p5" d="M 980,50 Q 988,40 994,52 Q 986,64 978,52 Z" fill="#FFB7C5" />
   </g>
 
-  <!-- Subtle Laser Hologram Scanner Line -->
-  <rect x="0" y="0" width="1200" height="2" fill="url(#scannerGrad)" class="scanner-line" />
+  <!-- Laser Hologram Scanner Line (3.5s) -->
+  <rect x="0" y="0" width="1600" height="2" fill="url(#laserGrad)" class="scan-line" />
 
   <!-- ================================================================= -->
-  <!-- LEFT COLUMN: DEVELOPER PROFILE & TERMINAL GLASS CARD              -->
+  <!-- LEFT COLUMN: APPLE TYPOGRAPHY, TERMINAL & TECH PILLS              -->
   <!-- ================================================================= -->
-  <g transform="translate(40, 40)">
-    <!-- Main Glass Card Container -->
-    <rect x="0" y="0" width="370" height="440" rx="20" ry="20" class="glass-card" />
-    
-    <!-- Window Bar Header -->
-    <circle cx="24" cy="24" r="5" fill="#FF5F56" />
-    <circle cx="40" cy="24" r="5" fill="#FFBD2E" />
-    <circle cx="56" cy="24" r="5" fill="#27C93F" />
-    <text x="75" y="28" fill="#F7C873" font-size="11" class="font-mono" opacity="0.8">user@UmarAnsari100:~$</text>
+  <g transform="translate(70, 70)">
+    <!-- Main Left Glass Card Container -->
+    <rect width="460" height="510" rx="24" class="glass-panel" />
 
-    <!-- Terminal Command Line -->
-    <g transform="translate(24, 60)">
-      <text x="0" y="0" fill="#FFB347" font-size="12" class="font-mono">❯ whoami</text>
-    </g>
+    <g transform="translate(36, 36)">
+      <!-- Window Controls -->
+      <circle cx="6" cy="6" r="4.5" fill="#FF5F56" />
+      <circle cx="20" cy="6" r="4.5" fill="#FFBD2E" />
+      <circle cx="34" cy="6" r="4.5" fill="#27C93F" />
 
-    <!-- Developer Name -->
-    <g transform="translate(24, 98)">
-      <text x="0" y="0" fill="#FFFFFF" font-size="24" font-weight="700" class="font-heading">Muhammad</text>
-      <text x="0" y="28" fill="url(#goldGradient)" font-size="26" font-weight="700" class="font-heading">Umar Ansari</text>
-    </g>
-
-    <!-- Role Pill -->
-    <g transform="translate(24, 142)">
-      <rect x="0" y="0" width="200" height="28" rx="14" ry="14" fill="rgba(219, 119, 6, 0.2)" stroke="#D97706" stroke-width="1"/>
-      <circle cx="14" cy="14" r="4" fill="#27C93F" />
-      <text x="26" y="18" fill="#FFF4E5" font-size="11" font-weight="600" class="font-sans">Full-Stack Web Developer</text>
-    </g>
-
-    <!-- Animated Quote Box -->
-    <g transform="translate(24, 185)">
-      <rect x="0" y="0" width="322" height="68" rx="10" fill="rgba(15, 15, 15, 0.4)" stroke="rgba(255, 180, 70, 0.15)" stroke-width="1"/>
-      <text x="14" y="22" fill="#F7C873" font-size="14" class="font-mono">“</text>
-      <text x="26" y="24" fill="#E2E8F0" font-size="11" class="font-sans" opacity="0.95">Building digital experiences</text>
-      <text x="26" y="40" fill="#E2E8F0" font-size="11" class="font-sans" opacity="0.95">that are not just functional,</text>
-      <text x="26" y="56" fill="#F7C873" font-size="11" font-weight="600" class="font-sans">but memorable. <tspan fill="#F7C873">”</tspan></text>
-    </g>
-
-    <!-- Contact & Location Info -->
-    <g transform="translate(24, 272)" font-size="11" class="font-sans" fill="#CBD5E1">
-      <!-- Location -->
-      <g transform="translate(0, 0)">
-        <path d="M 6,0 C 2.7,0 0,2.7 0,6 C 0,10.5 6,15 6,15 C 6,15 12,10.5 12,6 C 12,2.7 9.3,0 6,0 Z M 6,8 C 4.9,8 4,7.1 4,6 C 4,4.9 4.9,4 6,4 C 7.1,4 8,4.9 8,6 C 8,7.1 7.1,8 6,8 Z" fill="#FFB347" transform="scale(0.8)"/>
-        <text x="16" y="10" fill="#FFF4E5">Rawalpindi, Pakistan</text>
-      </g>
-      <!-- Email -->
-      <g transform="translate(0, 24)">
-        <path d="M 1,2 L 13,2 L 13,11 L 1,11 Z M 1,2 L 7,7 L 13,2" fill="none" stroke="#FFB347" stroke-width="1.2" transform="scale(0.9)"/>
-        <text x="16" y="10" fill="#F7C873">mumaransari1607@gmail.com</text>
-      </g>
-      <!-- Portfolio -->
-      <g transform="translate(0, 48)">
-        <circle cx="5" cy="5" r="4.5" fill="none" stroke="#FFB347" stroke-width="1.2"/>
-        <path d="M 1,5 L 9,5 M 5,1 C 7,3 7,7 5,9 M 5,1 C 3,3 3,7 5,9" fill="none" stroke="#FFB347" stroke-width="1"/>
-        <text x="16" y="9" fill="#FFF4E5" font-weight="500">umar-two.vercel.app</text>
-      </g>
-    </g>
-
-    <!-- Social Action Buttons -->
-    <g transform="translate(24, 380)">
-      <!-- GitHub Button -->
-      <g transform="translate(0, 0)" class="skill-pill">
-        <rect x="0" y="0" width="100" height="32" rx="8" fill="rgba(35, 35, 35, 0.7)" stroke="rgba(255, 180, 70, 0.3)" stroke-width="1"/>
-        <path d="M12,6 C8.7,6 6,8.7 6,12 C6,14.6 7.7,16.8 10.1,17.6 C10.4,17.7 10.5,17.5 10.5,17.3 C10.5,17.1 10.5,16.6 10.5,16 C8.8,16.4 8.5,15.2 8.5,15.2 C8.2,14.5 7.8,14.3 7.8,14.3 C7.2,13.9 7.8,13.9 7.8,13.9 C8.5,14 8.8,14.6 8.8,14.6 C9.4,15.7 10.5,15.4 10.9,15.2 C11,14.7 11.2,14.4 11.4,14.2 C9.7,14 7.9,13.3 7.9,10.4 C7.9,9.6 8.2,8.9 8.7,8.4 C8.6,8.2 8.3,7.4 8.8,6.4 C8.8,6.4 9.4,6.2 10.8,7.1 C11.4,6.9 12,6.8 12.6,6.8 C13.2,6.8 13.8,6.9 14.4,7.1 C15.8,6.2 16.4,6.4 16.4,6.4 C16.9,7.4 16.6,8.2 16.5,8.4 C17,8.9 17.3,9.6 17.3,10.4 C17.3,13.3 15.5,14 13.8,14.2 C14.1,14.5 14.3,15 14.3,15.7 C14.3,16.7 14.3,17.5 14.3,17.7 C14.3,17.9 14.4,18.1 14.7,18 C17.1,17.2 18.8,15 18.8,12.4 C18.6,8.7 15.9,6 12,6 Z" fill="#FFF4E5" transform="scale(0.85) translate(2, 2)"/>
-        <text x="32" y="20" fill="#FFF4E5" font-size="11" font-weight="600" class="font-sans">GitHub</text>
-      </g>
-      <!-- Portfolio Link Button -->
-      <g transform="translate(110, 0)" class="skill-pill">
-        <rect x="0" y="0" width="105" height="32" rx="8" fill="url(#goldGradient)" />
-        <text x="18" y="20" fill="#151515" font-size="11" font-weight="700" class="font-sans">Portfolio ↗</text>
-      </g>
-    </g>
-
-  </g>
-
-  <!-- ================================================================= -->
-  <!-- RIGHT COLUMN: SKILLS GRID & ANIMATED CODE EDITOR GLASS CARD       -->
-  <!-- ================================================================= -->
-  <g transform="translate(790, 40)">
-    <!-- Main Right Panel Glass Container -->
-    <rect x="0" y="0" width="370" height="440" rx="20" ry="20" class="glass-card" />
-
-    <!-- Panel 1: Tech Stack Grid Header -->
-    <g transform="translate(24, 20)">
-      <text x="0" y="14" fill="#F7C873" font-size="12" font-weight="600" class="font-mono">// SKILLS &amp; TECH STACK</text>
-    </g>
-
-    <!-- Skills Badges 3x3 Grid -->
-    <g transform="translate(24, 46)">
-      <!-- React -->
-      <g transform="translate(0, 0)" class="skill-pill">
-        <rect width="98" height="34" rx="8" fill="rgba(30, 30, 30, 0.6)" stroke="rgba(255, 180, 70, 0.2)" stroke-width="1"/>
-        <circle cx="20" cy="17" r="4" fill="#61DAFB"/>
-        <text x="32" y="21" fill="#FFF4E5" font-size="11" font-weight="500" class="font-sans">React.js</text>
-      </g>
-      <!-- JS -->
-      <g transform="translate(110, 0)" class="skill-pill">
-        <rect width="102" height="34" rx="8" fill="rgba(30, 30, 30, 0.6)" stroke="rgba(255, 180, 70, 0.2)" stroke-width="1"/>
-        <rect x="12" y="9" width="14" height="14" rx="2" fill="#F7DF1E"/>
-        <text x="14" y="20" fill="#000" font-size="9" font-weight="800" class="font-mono">JS</text>
-        <text x="34" y="21" fill="#FFF4E5" font-size="11" font-weight="500" class="font-sans">JavaScript</text>
-      </g>
-      <!-- TypeScript -->
-      <g transform="translate(222, 0)" class="skill-pill">
-        <rect width="100" height="34" rx="8" fill="rgba(30, 30, 30, 0.6)" stroke="rgba(255, 180, 70, 0.2)" stroke-width="1"/>
-        <rect x="12" y="9" width="14" height="14" rx="2" fill="#3178C6"/>
-        <text x="14" y="20" fill="#FFF" font-size="9" font-weight="800" class="font-mono">TS</text>
-        <text x="32" y="21" fill="#FFF4E5" font-size="11" font-weight="500" class="font-sans">TypeScript</text>
-      </g>
-      <!-- Next.js -->
-      <g transform="translate(0, 42)" class="skill-pill">
-        <rect width="98" height="34" rx="8" fill="rgba(30, 30, 30, 0.6)" stroke="rgba(255, 180, 70, 0.2)" stroke-width="1"/>
-        <circle cx="20" cy="17" r="7" fill="#FFF"/>
-        <text x="17" y="20" fill="#000" font-size="8" font-weight="900" class="font-sans">N</text>
-        <text x="34" y="21" fill="#FFF4E5" font-size="11" font-weight="500" class="font-sans">Next.js</text>
-      </g>
-      <!-- Tailwind -->
-      <g transform="translate(110, 42)" class="skill-pill">
-        <rect width="102" height="34" rx="8" fill="rgba(30, 30, 30, 0.6)" stroke="rgba(255, 180, 70, 0.2)" stroke-width="1"/>
-        <path d="M14,17 C15,14 17,14 18,15.5 C19,17 21,17.5 22.5,16" fill="none" stroke="#38BDF8" stroke-width="2"/>
-        <text x="32" y="21" fill="#FFF4E5" font-size="11" font-weight="500" class="font-sans">Tailwind</text>
-      </g>
-      <!-- PHP -->
-      <g transform="translate(222, 42)" class="skill-pill">
-        <rect width="100" height="34" rx="8" fill="rgba(30, 30, 30, 0.6)" stroke="rgba(255, 180, 70, 0.2)" stroke-width="1"/>
-        <text x="14" y="21" fill="#777BB4" font-size="10" font-weight="800" class="font-mono">PHP</text>
-        <text x="42" y="21" fill="#FFF4E5" font-size="11" font-weight="500" class="font-sans">Backend</text>
-      </g>
-    </g>
-
-    <!-- Divider Line -->
-    <line x1="24" y1="138" x2="346" y2="138" stroke="rgba(255, 180, 70, 0.15)" stroke-width="1" stroke-dasharray="4 4"/>
-
-    <!-- Panel 2: Animated Code Editor Header -->
-    <g transform="translate(24, 154)">
-      <circle cx="6" cy="6" r="3" fill="#FF5F56" />
-      <circle cx="16" cy="6" r="3" fill="#FFBD2E" />
-      <circle cx="26" cy="6" r="3" fill="#27C93F" />
-      <text x="40" y="9" fill="#F7C873" font-size="11" class="font-mono">buildDreams.js</text>
-    </g>
-
-    <!-- Code Editor Box -->
-    <g transform="translate(24, 175)">
-      <rect width="322" height="235" rx="10" fill="rgba(12, 12, 12, 0.75)" stroke="rgba(255, 180, 70, 0.2)" stroke-width="1"/>
-      
-      <!-- Line Numbers -->
-      <g font-size="11" class="font-mono" fill="#64748B">
-        <text x="14" y="26">01</text>
-        <text x="14" y="46">02</text>
-        <text x="14" y="66">03</text>
-        <text x="14" y="86">04</text>
-        <text x="14" y="106">05</text>
-        <text x="14" y="126">06</text>
-        <text x="14" y="146">07</text>
-        <text x="14" y="166">08</text>
-        <text x="14" y="186">09</text>
-        <text x="14" y="206">10</text>
+      <!-- Minimal Terminal Command Line -->
+      <g transform="translate(0, 36)">
+        <text x="0" y="0" fill="#F7C873" font-size="12" font-weight="600" class="font-mono" opacity="0.9">user@UmarAnsari100:~$ <tspan fill="#FFB347">cat profile.json</tspan></text>
       </g>
 
-      <!-- Code Syntax Highlighted Lines with CSS Animations -->
-      <g font-size="11" class="font-mono" transform="translate(42, 0)">
-        <text x="0" y="26" fill="#F43F5E">function <tspan fill="#F7C873">buildDreams</tspan>() {</text>
-        <text x="12" y="46" fill="#F43F5E">return <tspan fill="#FFF">{</tspan></text>
-        <text x="24" y="66" fill="#38BDF8">discipline<tspan fill="#FFF">:</tspan> <tspan fill="#F7C873">"Daily"</tspan><tspan fill="#FFF">,</tspan></text>
-        <text x="24" y="86" fill="#38BDF8">consistency<tspan fill="#FFF">:</tspan> <tspan fill="#FF9A3C">true</tspan><tspan fill="#FFF">,</tspan></text>
-        <text x="24" y="106" fill="#38BDF8">learning<tspan fill="#FFF">:</tspan> <tspan fill="#F7C873">"Never Stops"</tspan><tspan fill="#FFF">,</tspan></text>
-        <text x="24" y="126" fill="#38BDF8">goal<tspan fill="#FFF">:</tspan> <tspan fill="#F7C873">"Impact"</tspan><tspan fill="#FFF">,</tspan></text>
-        <text x="24" y="146" fill="#38BDF8">passion<tspan fill="#FFF">:</tspan> <tspan fill="#F7C873">"Infinite"</tspan></text>
-        <text x="12" y="166" fill="#FFF">};</text>
-        <text x="0" y="186" fill="#FFF">}</text>
-        <g transform="translate(0, 206)">
-          <text x="0" y="0" fill="#64748B" font-style="italic">// Turning ideas into reality 🚀</text>
-          <!-- Blinking Cursor at the end -->
-          <rect x="205" y="-10" width="7" height="13" fill="#FFB347" class="cursor"/>
+      <!-- Large Apple Typography Name -->
+      <g transform="translate(0, 88)">
+        <text x="0" y="0" fill="#FFF9F0" font-size="38" font-weight="700" class="font-heading" letter-spacing="-0.5">Muhammad</text>
+        <text x="0" y="44" fill="url(#goldTextGrad)" font-size="44" font-weight="700" class="font-heading" letter-spacing="-0.8">Umar Ansari</text>
+      </g>
+
+      <!-- Role Pill Capsule -->
+      <g transform="translate(0, 156)">
+        <rect x="0" y="0" width="218" height="30" rx="15" fill="url(#amberBadgeGrad)" stroke="#D97706" stroke-width="1.2"/>
+        <circle cx="15" cy="15" r="4" fill="#27C93F" />
+        <text x="28" y="19" fill="#FFF9F0" font-size="12" font-weight="600" class="font-sans">Full Stack Web Developer</text>
+      </g>
+
+      <!-- Tagline -->
+      <g transform="translate(0, 215)">
+        <text x="0" y="0" fill="#E2E8F0" font-size="13" font-weight="400" class="font-sans" opacity="0.9">Building digital experiences</text>
+        <text x="0" y="22" fill="#F7C873" font-size="13" font-weight="600" class="font-sans">that people remember.</text>
+      </g>
+
+      <!-- Divider -->
+      <line x1="0" y1="262" x2="388" y2="262" stroke="rgba(255, 180, 80, 0.15)" stroke-width="1" stroke-dasharray="4 4"/>
+
+      <!-- Tech Stack Header -->
+      <g transform="translate(0, 286)">
+        <text x="0" y="0" fill="#F7C873" font-size="11" font-weight="700" class="font-mono" letter-spacing="1">// CORE TECH STACK</text>
+      </g>
+
+      <!-- Sleek Tech Stack Pills (2 Rows x 3 Columns) -->
+      <g transform="translate(0, 304)">
+        <!-- Row 1 -->
+        <!-- React -->
+        <g transform="translate(0, 0)" class="pill-item">
+          <rect width="122" height="32" rx="8" fill="rgba(30, 30, 30, 0.55)" stroke="rgba(255, 180, 80, 0.22)" stroke-width="1"/>
+          <circle cx="18" cy="16" r="4" fill="#61DAFB"/>
+          <text x="30" y="20" fill="#FFF9F0" font-size="11" font-weight="500" class="font-sans">React.js</text>
+        </g>
+        <!-- Next.js -->
+        <g transform="translate(132, 0)" class="pill-item">
+          <rect width="122" height="32" rx="8" fill="rgba(30, 30, 30, 0.55)" stroke="rgba(255, 180, 80, 0.22)" stroke-width="1"/>
+          <circle cx="18" cy="16" r="6" fill="#FFF"/>
+          <text x="15" y="19" fill="#000" font-size="8" font-weight="900" class="font-sans">N</text>
+          <text x="30" y="20" fill="#FFF9F0" font-size="11" font-weight="500" class="font-sans">Next.js</text>
+        </g>
+        <!-- PHP -->
+        <g transform="translate(264, 0)" class="pill-item">
+          <rect width="122" height="32" rx="8" fill="rgba(30, 30, 30, 0.55)" stroke="rgba(255, 180, 80, 0.22)" stroke-width="1"/>
+          <text x="14" y="20" fill="#777BB4" font-size="10" font-weight="800" class="font-mono">PHP</text>
+          <text x="42" y="20" fill="#FFF9F0" font-size="11" font-weight="500" class="font-sans">Backend</text>
+        </g>
+
+        <!-- Row 2 -->
+        <!-- MySQL -->
+        <g transform="translate(0, 42)" class="pill-item">
+          <rect width="122" height="32" rx="8" fill="rgba(30, 30, 30, 0.55)" stroke="rgba(255, 180, 80, 0.22)" stroke-width="1"/>
+          <text x="14" y="20" fill="#00758F" font-size="10" font-weight="800" class="font-mono">SQL</text>
+          <text x="42" y="20" fill="#FFF9F0" font-size="11" font-weight="500" class="font-sans">MySQL</text>
+        </g>
+        <!-- Tailwind -->
+        <g transform="translate(132, 42)" class="pill-item">
+          <rect width="122" height="32" rx="8" fill="rgba(30, 30, 30, 0.55)" stroke="rgba(255, 180, 80, 0.22)" stroke-width="1"/>
+          <path d="M12,16 C13,13 15,13 16,14.5 C17,16 19,16.5 20.5,15" fill="none" stroke="#38BDF8" stroke-width="2"/>
+          <text x="28" y="20" fill="#FFF9F0" font-size="11" font-weight="500" class="font-sans">Tailwind</text>
+        </g>
+        <!-- Firebase -->
+        <g transform="translate(264, 42)" class="pill-item">
+          <rect width="122" height="32" rx="8" fill="rgba(30, 30, 30, 0.55)" stroke="rgba(255, 180, 80, 0.22)" stroke-width="1"/>
+          <path d="M14,22 L17,10 L20,15 L24,8 L26,22 Z" fill="#FFCA28" transform="scale(0.65) translate(4, 2)"/>
+          <text x="32" y="20" fill="#FFF9F0" font-size="11" font-weight="500" class="font-sans">Firebase</text>
         </g>
       </g>
-    </g>
 
+    </g>
   </g>
 
+  <!-- ================================================================= -->
+  <!-- RIGHT COLUMN: FLOATING GLASS CODE EDITOR & ELEGANT SOCIALS        -->
+  <!-- ================================================================= -->
+  <g transform="translate(1070, 70)">
+    <!-- Main Right Glass Card Container -->
+    <rect width="460" height="510" rx="24" class="glass-panel" />
+
+    <g transform="translate(36, 36)">
+      <!-- Editor Window Controls & Filename -->
+      <circle cx="6" cy="6" r="4.5" fill="#FF5F56" />
+      <circle cx="20" cy="6" r="4.5" fill="#FFBD2E" />
+      <circle cx="34" cy="6" r="4.5" fill="#27C93F" />
+      <text x="52" y="10" fill="#F7C873" font-size="12" class="font-mono" font-weight="600">buildDreams.js</text>
+
+      <!-- Code Editor Inner Canvas -->
+      <g transform="translate(0, 28)">
+        <rect width="388" height="340" rx="14" fill="rgba(10, 10, 10, 0.72)" stroke="rgba(255, 180, 80, 0.18)" stroke-width="1"/>
+
+        <!-- Line Numbers -->
+        <g font-size="12" class="font-mono" fill="#64748B">
+          <text x="16" y="32">01</text>
+          <text x="16" y="60">02</text>
+          <text x="16" y="88">03</text>
+          <text x="16" y="116">04</text>
+          <text x="16" y="144">05</text>
+          <text x="16" y="172">06</text>
+          <text x="16" y="200">07</text>
+          <text x="16" y="228">08</text>
+          <text x="16" y="256">09</text>
+          <text x="16" y="284">10</text>
+        </g>
+
+        <!-- Code Syntax Lines -->
+        <g font-size="12" class="font-mono" transform="translate(48, 0)">
+          <text x="0" y="32" fill="#F43F5E">function <tspan fill="#F7C873">buildDreams</tspan>() {</text>
+          <text x="14" y="60" fill="#F43F5E">return <tspan fill="#FFF9F0">{</tspan></text>
+          <text x="28" y="88" fill="#38BDF8">discipline<tspan fill="#FFF9F0">:</tspan> <tspan fill="#F7C873">"Daily"</tspan><tspan fill="#FFF9F0">,</tspan></text>
+          <text x="28" y="116" fill="#38BDF8">consistency<tspan fill="#FFF9F0">:</tspan> <tspan fill="#FF9A3C">true</tspan><tspan fill="#FFF9F0">,</tspan></text>
+          <text x="28" y="144" fill="#38BDF8">learning<tspan fill="#FFF9F0">:</tspan> <tspan fill="#F7C873">"Never Stops"</tspan><tspan fill="#FFF9F0">,</tspan></text>
+          <text x="28" y="172" fill="#38BDF8">goal<tspan fill="#FFF9F0">:</tspan> <tspan fill="#F7C873">"Impact"</tspan><tspan fill="#FFF9F0">,</tspan></text>
+          <text x="28" y="200" fill="#38BDF8">passion<tspan fill="#FFF9F0">:</tspan> <tspan fill="#F7C873">"Infinite"</tspan></text>
+          <text x="14" y="228" fill="#FFF9F0">};</text>
+          <text x="0" y="256" fill="#FFF9F0">}</text>
+          <g transform="translate(0, 284)">
+            <text x="0" y="0" fill="#64748B" font-style="italic">// Code. Build. Deploy. Repeat. 🚀</text>
+            <rect x="235" y="-11" width="8" height="15" fill="#FFB347" class="cursor"/>
+          </g>
+        </g>
+      </g>
+
+      <!-- Social Action Buttons Footer Row -->
+      <g transform="translate(0, 396)">
+        <!-- GitHub Link Button -->
+        <g transform="translate(0, 0)" class="pill-item">
+          <rect width="90" height="34" rx="8" fill="rgba(35, 35, 35, 0.75)" stroke="rgba(255, 180, 80, 0.3)" stroke-width="1"/>
+          <text x="22" y="21" fill="#FFF9F0" font-size="11" font-weight="600" class="font-sans">GitHub</text>
+        </g>
+        <!-- Portfolio Button -->
+        <g transform="translate(98, 0)" class="pill-item">
+          <rect width="98" height="34" rx="8" fill="url(#goldButtonGrad)"/>
+          <text x="16" y="21" fill="#120B08" font-size="11" font-weight="700" class="font-sans">Portfolio ↗</text>
+        </g>
+        <!-- Email Button -->
+        <g transform="translate(204, 0)" class="pill-item">
+          <rect width="86" height="34" rx="8" fill="rgba(35, 35, 35, 0.75)" stroke="rgba(255, 180, 80, 0.3)" stroke-width="1"/>
+          <text x="24" y="21" fill="#FFF9F0" font-size="11" font-weight="600" class="font-sans">Email</text>
+        </g>
+        <!-- LinkedIn Button -->
+        <g transform="translate(298, 0)" class="pill-item">
+          <rect width="90" height="34" rx="8" fill="rgba(35, 35, 35, 0.75)" stroke="rgba(255, 180, 80, 0.3)" stroke-width="1"/>
+          <text x="20" y="21" fill="#FFF9F0" font-size="11" font-weight="600" class="font-sans">LinkedIn</text>
+        </g>
+      </g>
+
+    </g>
+  </g>
 </svg>
