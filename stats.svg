@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" width="100%" height="auto">
+  <defs>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&amp;family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap');
+
+      .font-heading { font-family: 'Space Grotesk', -apple-system, sans-serif; }
+      .font-mono { font-family: 'IBM Plex Mono', monospace; }
+      .font-sans { font-family: 'Inter', -apple-system, sans-serif; }
+
+      .glass-card {
+        fill: rgba(20, 20, 20, 0.6);
+        stroke: rgba(255, 180, 70, 0.25);
+        stroke-width: 1.2px;
+        backdrop-filter: blur(20px);
+        filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.5));
+      }
+
+      .ring-progress {
+        stroke-dasharray: 250;
+        stroke-dashoffset: 40;
+        animation: ringFill 2.5s ease-out forwards;
+      }
+      @keyframes ringFill {
+        from { stroke-dashoffset: 250; }
+        to { stroke-dashoffset: 40; }
+      }
+    </style>
+
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFB347"/>
+      <stop offset="50%" stop-color="#F7C873"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="480" height="220" rx="16" ry="16" class="glass-card" />
+
+  <!-- Header -->
+  <g transform="translate(24, 28)">
+    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#F7C873" transform="scale(0.8)"/>
+    <text x="24" y="14" fill="#FFF4E5" font-size="14" font-weight="700" class="font-heading">GitHub Activity Overview</text>
+    <text x="24" y="30" fill="#94A3B8" font-size="10" class="font-mono">@UmarAnsari100</text>
+  </g>
+
+  <!-- Left Stats Column -->
+  <g transform="translate(24, 85)" font-size="12" class="font-sans">
+    <!-- Total Stars -->
+    <g transform="translate(0, 0)">
+      <circle cx="8" cy="8" r="4" fill="#FFB347"/>
+      <text x="20" y="12" fill="#E2E8F0" font-weight="500">Stars Earned</text>
+      <text x="220" y="12" fill="#F7C873" font-weight="700" class="font-mono" text-anchor="end">--</text>
+    </g>
+    <!-- Total Commits -->
+    <g transform="translate(0, 28)">
+      <circle cx="8" cy="8" r="4" fill="#F7C873"/>
+      <text x="20" y="12" fill="#E2E8F0" font-weight="500">Total Commits</text>
+      <text x="220" y="12" fill="#F7C873" font-weight="700" class="font-mono" text-anchor="end">Active</text>
+    </g>
+    <!-- Pull Requests -->
+    <g transform="translate(0, 56)">
+      <circle cx="8" cy="8" r="4" fill="#FF9A3C"/>
+      <text x="20" y="12" fill="#E2E8F0" font-weight="500">Pull Requests</text>
+      <text x="220" y="12" fill="#F7C873" font-weight="700" class="font-mono" text-anchor="end">Merged</text>
+    </g>
+    <!-- Contributed Repos -->
+    <g transform="translate(0, 84)">
+      <circle cx="8" cy="8" r="4" fill="#D97706"/>
+      <text x="20" y="12" fill="#E2E8F0" font-weight="500">Total Repositories</text>
+      <text x="220" y="12" fill="#F7C873" font-weight="700" class="font-mono" text-anchor="end">Live</text>
+    </g>
+  </g>
+
+  <!-- Right Side Rating Circle Ring -->
+  <g transform="translate(360, 120)">
+    <!-- Outer Track Circle -->
+    <circle cx="0" cy="0" r="45" fill="none" stroke="rgba(255, 180, 70, 0.15)" stroke-width="8"/>
+    <!-- Animated Progress Ring -->
+    <circle cx="0" cy="0" r="45" fill="none" stroke="url(#amberGrad)" stroke-width="8" stroke-linecap="round" class="ring-progress" transform="rotate(-90)"/>
+    <!-- Rating Text -->
+    <text x="0" y="6" text-anchor="middle" fill="#FFFFFF" font-size="22" font-weight="700" class="font-heading">A+</text>
+    <text x="0" y="24" text-anchor="middle" fill="#F7C873" font-size="9" font-weight="600" class="font-mono">RANK</text>
+  </g>
+</svg>

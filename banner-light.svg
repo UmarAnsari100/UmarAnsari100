@@ -1,0 +1,294 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 520" width="100%" height="auto">
+  <defs>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&amp;family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap');
+
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      
+      .font-heading { font-family: 'Space Grotesk', 'Inter', -apple-system, sans-serif; }
+      .font-mono { font-family: 'IBM Plex Mono', monospace; }
+      .font-sans { font-family: 'Inter', -apple-system, sans-serif; }
+
+      /* Light Theme Glassmorphism Styling */
+      .glass-card-light {
+        fill: rgba(255, 248, 240, 0.75);
+        stroke: rgba(217, 119, 6, 0.35);
+        stroke-width: 1.2px;
+        backdrop-filter: blur(20px);
+        filter: drop-shadow(0 15px 35px rgba(180, 100, 20, 0.15));
+        transition: all 0.4s ease;
+      }
+      .glass-card-light:hover {
+        stroke: rgba(217, 119, 6, 0.6);
+        fill: rgba(255, 252, 245, 0.85);
+      }
+
+      /* Glow & Bloom Filters */
+      .sun-glow {
+        animation: sunPulse 6s ease-in-out infinite alternate;
+        transform-origin: 680px 240px;
+      }
+      @keyframes sunPulse {
+        0% { opacity: 0.7; transform: scale(0.98); }
+        100% { opacity: 1; transform: scale(1.04); }
+      }
+
+      /* Petals Float (14s) */
+      .petal {
+        animation: petalFall 14s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .p1 { animation-delay: 0s; }
+      .p2 { animation-delay: 3s; }
+      .p3 { animation-delay: 6s; }
+      .p4 { animation-delay: 9s; }
+      .p5 { animation-delay: 11s; }
+
+      @keyframes petalFall {
+        0% { transform: translate(0, -20px) rotate(0deg); opacity: 0; }
+        15% { opacity: 0.9; }
+        85% { opacity: 0.9; }
+        100% { transform: translate(-180px, 540px) rotate(420deg); opacity: 0; }
+      }
+
+      /* Typing Terminal Effect */
+      .cursor {
+        animation: blink 700ms steps(2, start) infinite;
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+
+      /* Hologram Scan Line (3.5s) */
+      .scanner-line {
+        animation: scanMove 3.5s ease-in-out infinite alternate;
+      }
+      @keyframes scanMove {
+        0% { transform: translateY(20px); opacity: 0.2; }
+        50% { opacity: 0.7; }
+        100% { transform: translateY(480px); opacity: 0.2; }
+      }
+
+      .skill-pill-light {
+        transition: transform 0.2s ease;
+      }
+      .skill-pill-light:hover {
+        transform: translateY(-2px);
+      }
+    </style>
+
+    <radialGradient id="sunGlowGradLight" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF3E0" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#FFB347" stop-opacity="0.45"/>
+      <stop offset="80%" stop-color="#D97706" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#D97706" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="amberGradientDark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="50%" stop-color="#B45309"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </linearGradient>
+
+    <linearGradient id="scannerGradLight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(217, 119, 6, 0)"/>
+      <stop offset="20%" stop-color="rgba(217, 119, 6, 0.3)"/>
+      <stop offset="50%" stop-color="rgba(245, 158, 11, 0.7)"/>
+      <stop offset="80%" stop-color="rgba(217, 119, 6, 0.3)"/>
+      <stop offset="100%" stop-color="rgba(217, 119, 6, 0)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base Image -->
+  <image href="assets/anime-character.png" x="0" y="0" width="1200" height="520" preserveAspectRatio="xMidYMid slice" />
+
+  <!-- Animated Sunset Bloom behind Horizon -->
+  <circle cx="680" cy="240" r="140" fill="url(#sunGlowGradLight)" class="sun-glow" />
+
+  <!-- Animated Floating Sakura Petals -->
+  <g opacity="0.9">
+    <path class="petal p1" d="M 950,20 Q 958,10 964,22 Q 956,34 948,22 Z" fill="#FF8095" />
+    <path class="petal p2" d="M 1100,50 Q 1108,40 1114,52 Q 1106,64 1098,52 Z" fill="#FF5376" />
+    <path class="petal p3" d="M 820,10 Q 828,0 834,12 Q 826,24 818,12 Z" fill="#FF8095" opacity="0.7"/>
+    <path class="petal p4" d="M 1000,100 Q 1008,90 1014,102 Q 1006,114 998,102 Z" fill="#E11D48" />
+    <path class="petal p5" d="M 750,40 Q 758,30 764,42 Q 756,54 748,42 Z" fill="#FF8095" />
+  </g>
+
+  <!-- Subtle Laser Scanner Line -->
+  <rect x="0" y="0" width="1200" height="2" fill="url(#scannerGradLight)" class="scanner-line" />
+
+  <!-- ================================================================= -->
+  <!-- LEFT COLUMN: DEVELOPER PROFILE & TERMINAL LIGHT GLASS CARD         -->
+  <!-- ================================================================= -->
+  <g transform="translate(40, 40)">
+    <rect x="0" y="0" width="370" height="440" rx="20" ry="20" class="glass-card-light" />
+    
+    <!-- Window Bar Header -->
+    <circle cx="24" cy="24" r="5" fill="#EF4444" />
+    <circle cx="40" cy="24" r="5" fill="#F59E0B" />
+    <circle cx="56" cy="24" r="5" fill="#10B981" />
+    <text x="75" y="28" fill="#B45309" font-size="11" class="font-mono" font-weight="600">user@UmarAnsari100:~$</text>
+
+    <!-- Terminal Command Line -->
+    <g transform="translate(24, 60)">
+      <text x="0" y="0" fill="#D97706" font-size="12" font-weight="700" class="font-mono">❯ whoami</text>
+    </g>
+
+    <!-- Developer Name -->
+    <g transform="translate(24, 98)">
+      <text x="0" y="0" fill="#1E293B" font-size="24" font-weight="700" class="font-heading">Muhammad</text>
+      <text x="0" y="28" fill="url(#amberGradientDark)" font-size="26" font-weight="700" class="font-heading">Umar Ansari</text>
+    </g>
+
+    <!-- Role Pill -->
+    <g transform="translate(24, 142)">
+      <rect x="0" y="0" width="200" height="28" rx="14" ry="14" fill="rgba(217, 119, 6, 0.15)" stroke="#D97706" stroke-width="1.2"/>
+      <circle cx="14" cy="14" r="4" fill="#10B981" />
+      <text x="26" y="18" fill="#78350F" font-size="11" font-weight="700" class="font-sans">Full-Stack Web Developer</text>
+    </g>
+
+    <!-- Animated Quote Box -->
+    <g transform="translate(24, 185)">
+      <rect x="0" y="0" width="322" height="68" rx="10" fill="rgba(255, 255, 255, 0.65)" stroke="rgba(217, 119, 6, 0.25)" stroke-width="1"/>
+      <text x="14" y="22" fill="#D97706" font-size="14" class="font-mono">“</text>
+      <text x="26" y="24" fill="#334155" font-size="11" class="font-sans" font-weight="500">Building digital experiences</text>
+      <text x="26" y="40" fill="#334155" font-size="11" class="font-sans" font-weight="500">that are not just functional,</text>
+      <text x="26" y="56" fill="#B45309" font-size="11" font-weight="700" class="font-sans">but memorable. <tspan fill="#D97706">”</tspan></text>
+    </g>
+
+    <!-- Contact & Location Info -->
+    <g transform="translate(24, 272)" font-size="11" class="font-sans" fill="#334155">
+      <!-- Location -->
+      <g transform="translate(0, 0)">
+        <path d="M 6,0 C 2.7,0 0,2.7 0,6 C 0,10.5 6,15 6,15 C 6,15 12,10.5 12,6 C 12,2.7 9.3,0 6,0 Z M 6,8 C 4.9,8 4,7.1 4,6 C 4,4.9 4.9,4 6,4 C 7.1,4 8,4.9 8,6 C 8,7.1 7.1,8 6,8 Z" fill="#D97706" transform="scale(0.8)"/>
+        <text x="16" y="10" fill="#1E293B" font-weight="600">Rawalpindi, Pakistan</text>
+      </g>
+      <!-- Email -->
+      <g transform="translate(0, 24)">
+        <path d="M 1,2 L 13,2 L 13,11 L 1,11 Z M 1,2 L 7,7 L 13,2" fill="none" stroke="#D97706" stroke-width="1.2" transform="scale(0.9)"/>
+        <text x="16" y="10" fill="#B45309" font-weight="600">mumaransari1607@gmail.com</text>
+      </g>
+      <!-- Portfolio -->
+      <g transform="translate(0, 48)">
+        <circle cx="5" cy="5" r="4.5" fill="none" stroke="#D97706" stroke-width="1.2"/>
+        <path d="M 1,5 L 9,5 M 5,1 C 7,3 7,7 5,9 M 5,1 C 3,3 3,7 5,9" fill="none" stroke="#D97706" stroke-width="1"/>
+        <text x="16" y="9" fill="#1E293B" font-weight="700">umar-two.vercel.app</text>
+      </g>
+    </g>
+
+    <!-- Action Buttons -->
+    <g transform="translate(24, 380)">
+      <g transform="translate(0, 0)" class="skill-pill-light">
+        <rect x="0" y="0" width="100" height="32" rx="8" fill="rgba(255, 255, 255, 0.85)" stroke="rgba(217, 119, 6, 0.4)" stroke-width="1"/>
+        <text x="32" y="20" fill="#1E293B" font-size="11" font-weight="700" class="font-sans">GitHub</text>
+      </g>
+      <g transform="translate(110, 0)" class="skill-pill-light">
+        <rect x="0" y="0" width="105" height="32" rx="8" fill="url(#amberGradientDark)" />
+        <text x="18" y="20" fill="#FFF" font-size="11" font-weight="700" class="font-sans">Portfolio ↗</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================================================================= -->
+  <!-- RIGHT COLUMN: SKILLS GRID & CODE EDITOR LIGHT GLASS CARD          -->
+  <!-- ================================================================= -->
+  <g transform="translate(790, 40)">
+    <rect x="0" y="0" width="370" height="440" rx="20" ry="20" class="glass-card-light" />
+
+    <!-- Tech Stack Grid Header -->
+    <g transform="translate(24, 20)">
+      <text x="0" y="14" fill="#B45309" font-size="12" font-weight="700" class="font-mono">// SKILLS &amp; TECH STACK</text>
+    </g>
+
+    <!-- Skills Badges Grid -->
+    <g transform="translate(24, 46)">
+      <!-- React -->
+      <g transform="translate(0, 0)" class="skill-pill-light">
+        <rect width="98" height="34" rx="8" fill="rgba(255, 255, 255, 0.75)" stroke="rgba(217, 119, 6, 0.3)" stroke-width="1"/>
+        <circle cx="20" cy="17" r="4" fill="#0284C7"/>
+        <text x="32" y="21" fill="#0F172A" font-size="11" font-weight="600" class="font-sans">React.js</text>
+      </g>
+      <!-- JS -->
+      <g transform="translate(110, 0)" class="skill-pill-light">
+        <rect width="102" height="34" rx="8" fill="rgba(255, 255, 255, 0.75)" stroke="rgba(217, 119, 6, 0.3)" stroke-width="1"/>
+        <rect x="12" y="9" width="14" height="14" rx="2" fill="#EAB308"/>
+        <text x="14" y="20" fill="#000" font-size="9" font-weight="800" class="font-mono">JS</text>
+        <text x="34" y="21" fill="#0F172A" font-size="11" font-weight="600" class="font-sans">JavaScript</text>
+      </g>
+      <!-- TypeScript -->
+      <g transform="translate(222, 0)" class="skill-pill-light">
+        <rect width="100" height="34" rx="8" fill="rgba(255, 255, 255, 0.75)" stroke="rgba(217, 119, 6, 0.3)" stroke-width="1"/>
+        <rect x="12" y="9" width="14" height="14" rx="2" fill="#2563EB"/>
+        <text x="14" y="20" fill="#FFF" font-size="9" font-weight="800" class="font-mono">TS</text>
+        <text x="32" y="21" fill="#0F172A" font-size="11" font-weight="600" class="font-sans">TypeScript</text>
+      </g>
+      <!-- Next.js -->
+      <g transform="translate(0, 42)" class="skill-pill-light">
+        <rect width="98" height="34" rx="8" fill="rgba(255, 255, 255, 0.75)" stroke="rgba(217, 119, 6, 0.3)" stroke-width="1"/>
+        <circle cx="20" cy="17" r="7" fill="#0F172A"/>
+        <text x="17" y="20" fill="#FFF" font-size="8" font-weight="900" class="font-sans">N</text>
+        <text x="34" y="21" fill="#0F172A" font-size="11" font-weight="600" class="font-sans">Next.js</text>
+      </g>
+      <!-- Tailwind -->
+      <g transform="translate(110, 42)" class="skill-pill-light">
+        <rect width="102" height="34" rx="8" fill="rgba(255, 255, 255, 0.75)" stroke="rgba(217, 119, 6, 0.3)" stroke-width="1"/>
+        <path d="M14,17 C15,14 17,14 18,15.5 C19,17 21,17.5 22.5,16" fill="none" stroke="#0284C7" stroke-width="2"/>
+        <text x="32" y="21" fill="#0F172A" font-size="11" font-weight="600" class="font-sans">Tailwind</text>
+      </g>
+      <!-- PHP -->
+      <g transform="translate(222, 42)" class="skill-pill-light">
+        <rect width="100" height="34" rx="8" fill="rgba(255, 255, 255, 0.75)" stroke="rgba(217, 119, 6, 0.3)" stroke-width="1"/>
+        <text x="14" y="21" fill="#4F46E5" font-size="10" font-weight="800" class="font-mono">PHP</text>
+        <text x="42" y="21" fill="#0F172A" font-size="11" font-weight="600" class="font-sans">Backend</text>
+      </g>
+    </g>
+
+    <!-- Divider Line -->
+    <line x1="24" y1="138" x2="346" y2="138" stroke="rgba(217, 119, 6, 0.2)" stroke-width="1" stroke-dasharray="4 4"/>
+
+    <!-- Animated Code Editor Header -->
+    <g transform="translate(24, 154)">
+      <circle cx="6" cy="6" r="3" fill="#EF4444" />
+      <circle cx="16" cy="6" r="3" fill="#F59E0B" />
+      <circle cx="26" cy="6" r="3" fill="#10B981" />
+      <text x="40" y="9" fill="#78350F" font-size="11" class="font-mono" font-weight="700">buildDreams.js</text>
+    </g>
+
+    <!-- Code Editor Box -->
+    <g transform="translate(24, 175)">
+      <rect width="322" height="235" rx="10" fill="rgba(255, 255, 255, 0.85)" stroke="rgba(217, 119, 6, 0.3)" stroke-width="1"/>
+      
+      <!-- Line Numbers -->
+      <g font-size="11" class="font-mono" fill="#94A3B8">
+        <text x="14" y="26">01</text>
+        <text x="14" y="46">02</text>
+        <text x="14" y="66">03</text>
+        <text x="14" y="86">04</text>
+        <text x="14" y="106">05</text>
+        <text x="14" y="126">06</text>
+        <text x="14" y="146">07</text>
+        <text x="14" y="166">08</text>
+        <text x="14" y="186">09</text>
+        <text x="14" y="206">10</text>
+      </g>
+
+      <!-- Syntax Highlighting Light Mode -->
+      <g font-size="11" class="font-mono" transform="translate(42, 0)">
+        <text x="0" y="26" fill="#E11D48">function <tspan fill="#D97706">buildDreams</tspan>() {</text>
+        <text x="12" y="46" fill="#E11D48">return <tspan fill="#0F172A">{</tspan></text>
+        <text x="24" y="66" fill="#0284C7">discipline<tspan fill="#0F172A">:</tspan> <tspan fill="#D97706">"Daily"</tspan><tspan fill="#0F172A">,</tspan></text>
+        <text x="24" y="86" fill="#0284C7">consistency<tspan fill="#0F172A">:</tspan> <tspan fill="#B45309">true</tspan><tspan fill="#0F172A">,</tspan></text>
+        <text x="24" y="106" fill="#0284C7">learning<tspan fill="#0F172A">:</tspan> <tspan fill="#D97706">"Never Stops"</tspan><tspan fill="#0F172A">,</tspan></text>
+        <text x="24" y="126" fill="#0284C7">goal<tspan fill="#0F172A">:</tspan> <tspan fill="#D97706">"Impact"</tspan><tspan fill="#0F172A">,</tspan></text>
+        <text x="24" y="146" fill="#0284C7">passion<tspan fill="#0F172A">:</tspan> <tspan fill="#D97706">"Infinite"</tspan></text>
+        <text x="12" y="166" fill="#0F172A">};</text>
+        <text x="0" y="186" fill="#0F172A">}</text>
+        <g transform="translate(0, 206)">
+          <text x="0" y="0" fill="#64748B" font-style="italic">// Turning ideas into reality 🚀</text>
+          <rect x="205" y="-10" width="7" height="13" fill="#D97706" class="cursor"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
